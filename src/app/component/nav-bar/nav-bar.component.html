@@ -1,0 +1,37 @@
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark bg-dark">
+  <mdb-navbar-brand>
+      <a class="navbar-brand" href="/inicioRestaurante">
+          <img src="/assets/img/tiendaDelivery.png" height="75" alt="">
+      </a>
+  </mdb-navbar-brand>
+  <links>
+      <div class="navbar-nav">
+           <!-- Dropdown -->
+          <li class="nav-item dropdown" dropdown>
+              <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+              Productos<span class="caret"></span></a>
+              <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+                  <a class="dropdown-item waves-light" mdbWavesEffect href="/crearProducto">Crear producto</a>
+                  <a class="dropdown-item waves-light" mdbWavesEffect href="/verProducto">Ver productos</a>
+              </div>
+          </li>
+          <li class="nav-item dropdown" dropdown>
+              <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+              Ordenes<span class="caret"></span></a>
+              <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+                  <a class="dropdown-item waves-light" mdbWavesEffect href="/verOrdenesRestaurante">Ver ordenes</a>
+              </div>
+          </li>
+      </div>
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown" dropdown>
+              <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+                  <mdb-icon fas icon="user-alt"></mdb-icon>
+              </a>
+              <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown dropdown-primary" role="menu">
+              <a class="dropdown-item waves-light" mdbWavesEffect >Salir</a>
+              </div>
+          </li>
+      </ul>
+  </links>
+</mdb-navbar>
